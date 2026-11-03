@@ -1,5 +1,5 @@
 import {createClient} from 'npm:@supabase/supabase-js@2.118.0';
-const origins=new Set(['https://foodbridge-share-hope.singh-01-nidhi11.chatgpt.site','http://terminal.local:4173']);
+const origins=new Set(['https://foodbridge-share-hope.singh-01-nidhi11.chatgpt.site','http://terminal.local:4173','https://foodbridge-sharehope-next-gen-x2.vercel.app','https://foodbridge-sharehope.vercel.app']);
 Deno.serve(async (req:Request)=>{
  const origin=req.headers.get('Origin')||'';
  const headers:Record<string,string>={'Content-Type':'application/json','Vary':'Origin','Access-Control-Allow-Headers':'authorization,apikey,content-type,x-client-info','Access-Control-Allow-Methods':'POST,OPTIONS'};
